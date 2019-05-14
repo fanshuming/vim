@@ -1,0 +1,14 @@
+1. sudo apt-get install cscope -y
+2. sudo apt-get install ctags
+3. sudo apt-get install vim vim-scripts vim-doc
+
+
+cscope -Rbq
+ctags -R *
+
+#auto print
+ctags -R --fields=+lS
+
+#for c++
+ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
+
